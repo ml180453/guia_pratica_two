@@ -36,6 +36,14 @@
             cmbColor = new ComboBox();
             btnDibujar = new Button();
             areaDibujo = new PictureBox();
+            label4 = new Label();
+            txtInicialX = new TextBox();
+            label5 = new Label();
+            txtFinalX = new TextBox();
+            label6 = new Label();
+            txtInicialY = new TextBox();
+            txtFinalY = new TextBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)areaDibujo).BeginInit();
             SuspendLayout();
             // 
@@ -91,7 +99,7 @@
             // 
             // btnDibujar
             // 
-            btnDibujar.Location = new Point(47, 159);
+            btnDibujar.Location = new Point(46, 338);
             btnDibujar.Name = "btnDibujar";
             btnDibujar.Size = new Size(247, 46);
             btnDibujar.TabIndex = 3;
@@ -104,20 +112,92 @@
             areaDibujo.BorderStyle = BorderStyle.FixedSingle;
             areaDibujo.Location = new Point(323, 25);
             areaDibujo.Name = "areaDibujo";
-            areaDibujo.Size = new Size(456, 299);
+            areaDibujo.Size = new Size(456, 359);
             areaDibujo.TabIndex = 4;
             areaDibujo.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(10, 148);
+            label4.Name = "label4";
+            label4.Size = new Size(83, 15);
+            label4.TabIndex = 0;
+            label4.Text = "Punto Inicial X";
+            // 
+            // txtInicialX
+            // 
+            txtInicialX.Location = new Point(105, 148);
+            txtInicialX.Name = "txtInicialX";
+            txtInicialX.Size = new Size(188, 23);
+            txtInicialX.TabIndex = 1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(10, 234);
+            label5.Name = "label5";
+            label5.Size = new Size(77, 15);
+            label5.TabIndex = 0;
+            label5.Text = "Punto Final X";
+            // 
+            // txtFinalX
+            // 
+            txtFinalX.Location = new Point(106, 231);
+            txtFinalX.Name = "txtFinalX";
+            txtFinalX.Size = new Size(188, 23);
+            txtFinalX.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(10, 191);
+            label6.Name = "label6";
+            label6.Size = new Size(83, 15);
+            label6.TabIndex = 0;
+            label6.Text = "Punto Inicial Y";
+            // 
+            // txtInicialY
+            // 
+            txtInicialY.Location = new Point(106, 183);
+            txtInicialY.Name = "txtInicialY";
+            txtInicialY.Size = new Size(188, 23);
+            txtInicialY.TabIndex = 1;
+            // 
+            // txtFinalY
+            // 
+            txtFinalY.Location = new Point(106, 276);
+            txtFinalY.Name = "txtFinalY";
+            txtFinalY.Size = new Size(188, 23);
+            txtFinalY.TabIndex = 1;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(16, 284);
+            label7.Name = "label7";
+            label7.Size = new Size(77, 15);
+            label7.TabIndex = 0;
+            label7.Text = "Punto Final Y";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 361);
+            ClientSize = new Size(800, 528);
             Controls.Add(areaDibujo);
             Controls.Add(btnDibujar);
             Controls.Add(cmbColor);
             Controls.Add(txtEspacio);
+            Controls.Add(txtFinalY);
+            Controls.Add(txtFinalX);
+            Controls.Add(txtInicialY);
+            Controls.Add(txtInicialX);
             Controls.Add(txtCantidad);
+            Controls.Add(label7);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -138,5 +218,13 @@
         private ComboBox cmbColor;
         private Button btnDibujar;
         private PictureBox areaDibujo;
+        private Label label4;
+        private TextBox txtInicialX;
+        private Label label5;
+        private TextBox txtFinalX;
+        private Label label6;
+        private TextBox txtInicialY;
+        private TextBox txtFinalY;
+        private Label label7;
     }
 }

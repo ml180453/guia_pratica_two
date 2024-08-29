@@ -25,14 +25,18 @@ namespace guia_pratica_two
             int interaciones = int.Parse(txtCantidad.Text);
             int espacio = int.Parse(txtEspacio.Text);
 
-            area.Clear(Color.White);
+            int finalX = int.Parse(txtFinalX.Text);
+            int finalY = int.Parse(txtFinalY.Text);
 
-            int puntoInicio = 50;
+            int inicioX = int.Parse(txtInicialX.Text);
+            int inicioY = int.Parse(txtInicialY.Text);
+
+            area.Clear(Color.White);
 
             for (int i = 0; i < interaciones; i++)
             {
                 area.DrawLine(
-                    lapicero, 20, puntoInicio + (espacio * i), 300, puntoInicio + (espacio * i)
+                    lapicero, inicioX, inicioY + (espacio * i), finalX, finalY + (espacio * i)
                 );
             }
         }
